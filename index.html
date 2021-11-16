@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="vi">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/aos.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/reponsive.css">
+      <title>Trang chủ</title>
+   </head>
+   <body>
+      <a id="button_scroll_top"><i class="fas fa-arrow-up"></i></a>
+      <a id="calltrap-btn" class="b-calltrap-btn calltrap_offline hidden-phone visible-tablet pulse-2"
+         href="tel:02873070789">
+         <div id="calltrap-ico"></div>
+      </a>
+      <div class="modal fade" style="padding-right: 0!important;" id="modalLoginForm" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content form-discount">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  box-modal-img pr-0">
+                     <img src="img/sale-off-promotion.png" class="img-modal" alt="khuyen-mai-fito-clear"
+                        title="Khuyến mãi Fito Clear">
+                  </div>
+                  <div
+                     class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modal-form d-flex align-items-center pl-0 tablet-style">
+                     <form action="" method="post">
+                        <div class="modal-header">
+                           <h4 class="modal-title w-100">Đăng ký nhận giá ưu đãi</h4>
+                           <button type="button" class="close mr-0" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                           </button>
+                        </div>
+                        <div class="modal-body mx-3 pt-4 pb-4">
+                           <div class="md-form mb-3 text-left">
+                              <label>Họ tên</label>
+                              <input type="text" name="name" class="form-control validate" autocomplete="off" required>
+                           </div>
+                           <div class="md-form mb-3 text-left">
+                              <label>Số điện thoại</label>
+                              <input type="text" name="phone" class="form-control validate only_number" autocomplete="off"
+                                 required maxlength="10" onkeypress="validate(event)">
+                              <center>
+                                 <button class="btn btn-default mt-4 js_submit" type="submit">Đăng ký
+                                 ngay</button>
+                              </center>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12">
+                  <div class="navbar d-flex align-items-center justify-content-between">
+                     <div class="logo">
+                        <a href="index.html">
+                        <img src="img/logo.png" alt="Fito Clear" title="Fito Clear">
+                        </a>
+                        <button class="navbar-bar"><i class="fas fa-bars"></i></button>
+                     </div>
+                     <nav class="navbar-content">
+                        <div class="navbar-close"><i class="fas fa-times"></i></div>
+                        <ul>
+                           <li><a href="index.html">TRANG CHỦ</a></li>
+                           <li><a href="about.html">GIỚI THIỆU</a></li>
+                           <li><a href="blog.html">KIẾN THỨC CHĂM SÓC DA</a></li>
+                           <li><a href="contact.html">LIÊN HỆ</a></li>
+                           <li id="btn-order"><a href="#" data-toggle="modal" data-target="#modalLoginForm">ĐẶT
+                              HÀNG NGAY</a>
+                           </li>
+                        </ul>
+                     </nav>
+                     <div class="navbar-button">
+                        <a href="#" class="btn btn-order" data-toggle="modal" data-target="#modalLoginForm">ĐẶT
+                        HÀNG NGAY</a>
+                     </div>
+                  </div>
+               </div> 
+            </div>
+         </div>
+      </section>
+      <section class="banner"></section>
+      <section class="signal">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="frames">
+                  <h3><span class="rounded-circle d-none d-md-block"></span> Bạn Đang Ám Ảnh Lo Sợ Vì</h3>
+               </div>
+               <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                  <div class="frame-nail" data-aos="zoom-in" data-aos-duration="1500">
+                     <img src="img/cham-da.png">
+                     <div class="title-nail">Chàm da</div>
+                     <div class="text-nail">
+                        <p>Chàm da là bệnh viêm da phổ biến với các mụn nước có triệu chứng phổ biến là ngứa ngáy, khó
+                           chịu, có tính chất mãn tính và rất dễ tái phát
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                  <div class="frame-nail" data-aos="zoom-in" data-aos-duration="1000">
+                     <img src="img/viem-da.png">
+                     <div class="title-nail">Viêm da</div>
+                     <div class="text-nail">
+                        <p>Tình trạng viêm da là bệnh da liễu có biểu hiện chủ yếu là làm mẩn ngứa, đỏ da, phù nề. Bệnh
+                           không lây, không gây hậu quả nghiêm trọng nhưng ảnh hưởng đến sinh hoạt.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                  <div class="frame-nail" data-aos="zoom-in" data-aos-duration="1500">
+                     <img src="img/vay-nen.png">
+                     <div class="title-nail">Vẩy nến</div>
+                     <div class="text-nail">
+                        <p>Vảy nến là bệnh viêm da mãn tính phổ biến, gây cảm giác đau đớn, ngứa ngáy, mất thẩm mỹ vì những
+                           đốm mảng dày, có vảy trắng hoặc bạc.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="help-you">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="frames">
+                  <h3><span class="rounded-circle d-none d-md-block"></span> ECO CALM Sẽ Giúp Gì Cho Bạn</h3>
+               </div>
+               <div class="col-md-6 col-12 right-video">
+                  <div class="media bg-help-1" data-aos="fade-right" data-aos-duration="1000"
+                     data-aos-easing="ease-in-sine">
+                     <div class="media-body">
+                        <p>Với thành phần 100% từ thiên nhiên hỗ trợ làm giảm các vấn đề về da như viêm, chàm, vảy nến hiệu
+                           quả, an toàn, đảm bảo dứt điểm, không tái phát, không tác dụng phụ.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-12 left-video">
+                  <div class="media bg-help-2" data-aos="fade-left" data-aos-duration="1000"
+                     data-aos-easing="ease-in-sine">
+                     <div class="media-body">
+                        <p>Các thành phần có trong Eco Calm thẩm thấu sâu vào làn da giúp kháng viêm, kháng khuẩn, làm dịu
+                           mát da, tăng độ ẩm, phục hồi những vị trí mà làn da bị tổn thương.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="ingredient">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="frames">
+                  <h3><span class="rounded-circle d-none d-md-block"></span> Thành Phần Của ECO CALM</h3>
+               </div>
+            </div>
+            <div class="top-1">
+               <div class="row justify-content-center">
+                  <figure id="bonus-1">
+                     <img src="img/bonus.png">
+                  </figure>
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+                     <div class="ingredient-1">
+                        <img src="img/chiet-xuat-toi.png" alt="Chiết xuất Tỏi">
+                        <div class="name-ingredient">Chiết xuất Tỏi</div>
+                        <div class="description-ingredient">Kháng nấm, kháng khuẩn, làm lành vết thương nhanh chóng, diệt
+                           vi khuẩn tận gốc, hỗ trợ quá trình tái tạo làn da do thành phần allicin có trong tỏi
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+                     <div class="ingredient-1">
+                        <img src="img/cuc-la-ma.png" alt="Hoa Cúc La Mã">
+                        <div class="name-ingredient">Hoa Cúc La Mã</div>
+                        <div class="description-ingredient">Kháng sinh kháng viêm, giảm cảm giác ngứa ngáy, hồi phục vết
+                           thương nhanh chóng, kháng khuẩn, làm sạch vết thương, kích thích sản sinh tế bào chống viêm
+                           nhiễm hiệu quả.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+                     <div class="ingredient-1">
+                        <img src="img/tinh-dau-gung.png" alt="Tinh dầu gừng">
+                        <div class="name-ingredient">Tinh dầu gừng</div>
+                        <div class="description-ingredient">Có tính ấm, vị cay giúp làm dịu da, kháng khuẩn và chống viêm,
+                           giảm đau, ngừa nấm, chống nhiễm trùng, lây nhiễm, diệt khuẩn, chống lại nhiều loại vi khuẩn.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="top-2">
+               <div class="row justify-content-center">
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+                     <div class="ingredient-1">
+                        <img src="img/chiet-xuat-tra-xanh.png" alt="Chiết xuất trà xanh">
+                        <div class="name-ingredient">Chiết xuất trà xanh</div>
+                        <div class="description-ingredient">Tinh chất trong trà xanh có tác dụng làm mát da, chống viêm,
+                           chống nấm, sát khuẩn vết thương, làm sạch tế bào chết, thúc đẩy quá trình tạo mô tại làn da đã
+                           tổn thương
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+                     <div class="ingredient-1">
+                        <img src="img/trau.png" alt="Trầu không">
+                        <div class="name-ingredient">Trầu không</div>
+                        <div class="description-ingredient">Làm sạch da, làm lành vết thương, kháng khuẩn, giảm ngứa, khử
+                           mùi hiệu quả, diệt tận gốc vi khuẩn, sát trùng vết thương, hỗ trợ điều trị các bệnh về da có
+                           liên quan đến vi khuẩn, nấm
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-3">
+                     <div class="ingredient-1">
+                        <img src="img/acid-salicylic.png" alt="Acid salicylic">
+                        <div class="name-ingredient">Acid salicylic</div>
+                        <div class="description-ingredient">Kháng viêm, thông thoáng da, làm sạch nhẹ nhàng trên da, giúp
+                           làm mịn, tẩy tế bào chết và làm đều màu da, làm mờ sẹo và vết thâm.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="expert">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="frames">
+                  <h3><span class="rounded-circle d-none d-md-block"></span> Chuyên Gia Đánh Giá ECO CALM</h3>
+               </div>
+            </div>
+            <div class="row frame-expert">
+               <div class="col-12 col-md-3 col-lg-3 col-xl-3" id="none-desktop">
+                  <div class="img-expert" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                     <img src="img/doctor.png">
+                  </div>
+               </div>
+               <div class="col-12 col-md-9 col-lg-9 col-xl-9">
+                  <div class="backgroung-text-expert" data-aos="fade-right" data-aos-duration="1000"
+                     data-aos-easing="ease-in-sine">
+                     Một số bệnh da liễu mà tôi đã và đang chữa trị trong suốt nhiều năm vừa qua như vảy nến, chàm, viêm
+                     da,.. Thông thường những căn bệnh này đòi hỏi thời gian chữa trị lâu dài cũng như phải theo dõi và
+                     chữa trị đúng tiến độ mới có thể chữa dứt điểm hoàn toàn.
+                     <br><br>
+                     Chính tôi đã dành thời gian để tiến hành nghiên cứu cũng như tìm kiếm về các sản phẩm điều trị các
+                     vấn đề về da. Trên thị trường hiện nay, giữa vô vàn sản phẩm chữa các vấn đề về da, tôi đặc biệt
+                     thấy kem <b>Eco Calm</b> là sản phẩm có thành phần từ tự nhiên an toàn nhất. Tùy vào cơ địa và tình
+                     trạng
+                     bệnh, mà chỉ cần một tháng để có thể dứt bệnh hoàn toàn.
+                     <br><br>
+                     Tôi đã khuyến khích tất cả những bệnh nhân của mình là nên mua sản phẩm này để điều trị bệnh và kết
+                     quả là gần như tất cả trong số họ đều đã khỏi bệnh và không có dấu hiệu tái phát. Nếu bạn đang thắc
+                     mắc và cần một sản phẩm trị liệu về da, <b>Eco Calm</b> là lựa chọn thiết thực nhất dành cho bạn!
+                  </div>
+               </div>
+               <div class="col-12 col-md-3 col-lg-3 col-xl-3" id="none-mobile">
+                  <div class="img-expert" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                     <img src="img/doctor.png">
+                  </div>
+               </div>
+            </div>
+            <div class="row frame-video justify-content-center">
+               <div class="col-md-7 col-12 left-video">
+                  <div class="video-review">
+                     <iframe src="http://www.youtube.com/embed/5OkuqtVr-Ss" width="100%" height="500px" frameborder="0"
+                        allowfullscreen>
+                     </iframe>
+                  </div>
+               </div>
+               <div class="col-md-5 col-12 right-video">
+                  <div class="text-video">
+                     <div class="title-video">Chia sẻ về Eco Calm của Chị Lê Thu Thủy</div>
+                     <div class="detail-text">
+                        Mình bị bệnh vẩy nến gần 5 năm nay, đã sử dụng các loại thuốc tây nhưng nó chỉ
+                        có hiệu quả tức thời, được 1 thời gian bệnh lại tái phát khiến mình vô cùng mệt mỏi vì cứ cứ mặc
+                        quần áo kín và không dám giao tiếp với ai. Chỉ sau 2 tháng sử dụng <b>Eco Calm</b>, bệnh vẩy nến đã
+                        lành
+                        hẳn. Dưỡng chất từ <b>Eco Calm</b> thẩm thấu vào các lớp tế bào, tiêu diệt vi khuẩn hiệu quả, đồng
+                        thời
+                        phục hồi các tế bào da bị tổn thương, tái tạo tế bào mới giúp làn da mình không những khỏi bệnh mà
+                        còn mịn màng hơn. Đến nay tuy không còn dùng nữa nhưng bệnh vẫn không tái phát.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="customer">
+         <div class="contain-fluid">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+               <figure id="bonus-3">
+                  <img src="img/bonus.png">
+               </figure>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="media frame-customer">
+                        <img src="img/customer-1.png" class="align-self-center mr-3">
+                        <div class="media-body text-customer">
+                           <p>Hôm nay tôi sẽ giới thiệu đến các bạn sản phẩm trị vảy nến có tên là <b>Eco Calm</b>. Tôi đã
+                              sống
+                              chung với căn bệnh được gần 10 năm. Thời gian đó tôi đã tìm đến rất nhiều cơ sở Da Liễu, từ
+                              Đông cho đến Nam y nhưng bệnh tình vẫn không thuyên giảm. Kể từ khi vô tình biết được sản
+                              phẩm <b>Eco Calm</b>, tôi mới thật sự tìm được chính mình. Với chiết xuất từ thiên nhiên như
+                              tỏi,
+                              trà xanh, hoa cúc,...làm trẻ hóa da, chống viêm, chống khuẩn hiệu quả. Tôi đã ngưng sử dụng
+                              và hiện nay căn bệnh vảy nến vẫn chưa một lần ghé thăm nữa.
+                           </p>
+                           <div class="name-customer">Anh Trần Hoàng Minh chia sẻ vê Eco Calm</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="media frame-customer">
+                        <img src="img/customer-2.png" class="align-self-center mr-3">
+                        <div class="media-body text-customer">
+                           <p>Trong vòng 2 năm qua, tôi đã chi ra rất nhiều tiền cũng như thời gian để đi tìm phương pháp
+                              chữa khỏi vảy nến. Tuy nhiên, tiền mất nhưng bệnh tật vẫn không khỏi. Da của tôi ngày càng
+                              tồi tệ hơn, ngứa ngáy kinh khủng. Là con gái nữa, da dẻ như vậy trông rất mất thẩm mỹ, vì vậy
+                              mà tôi tự ti ngại giao tiếp đi hẳn. Và rồi tôi biết đến <b>Eco Calm</b> qua một lần tìm kiếm
+                              trên
+                              mạng. Đặt hết niềm tin vào nó và rồi kết quả mang lại khiến tôi không thể tin nổi. Sau 2
+                              tháng dùng hết 1 liệu trình, làn da của tôi đã được phục hồi gần như hoàn toàn, tôi đã ngưng
+                              vài ngày mà không thấy có dấu hiệu tái phát. Sản phẩm này tốt thật sự! Các bạn hãy tin tôi
+                              nhé!
+                           </p>
+                           <div class="name-customer">Chị Trần Bích Thảo chia sẻ về Eco Calm</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="media frame-customer">
+                        <img src="img/customer-3.png" class="align-self-center mr-3">
+                        <div class="media-body text-customer">
+                           <p>Đến nay khi đã chắc chắn khỏi hẳn bệnh, tôi mới tự tin kể cho mọi người câu chuyện của mình.
+                              Thật ra, tôi cứ nghĩ rằng căn bệnh chàm vô phương cứu chữa rồi, có lẽ tôi phải sống cùng nó
+                              cả đời. Những mỹ phẩm đắt tiền không loại nào tôi không dùng qua, có hiệu quả thật nhưng chỉ
+                              là nhất thời, ngưng là tái phát ngay. Ngay lúc tôi bất lực nhất thì Eco Calm đến làm cuộc
+                              sống của tôi sang trang mới. Chỉ sau nửa tháng kiên trì bôi thì mọi triệu chứng ngứa ngáy đã
+                              giảm hẳn. Bây giờ đã 3 tháng, tôi cũng ngưng dùng vì bệnh chàm đã thật sự khỏi hẳn rồi. Thật
+                              cảm kích ai đã chế tạo và sản xuất ra “thần dược” này!
+                           </p>
+                           <div class="name-customer">Anh Thanh Lâm chia sẻ về Eco Calm</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="question">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="frames">
+                  <h3><span class="rounded-circle d-none d-md-block"></span> Câu Hỏi Về ECO CALM</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-12 col-md-9 ">
+               <ul class="list-ques" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                  <li data-ques="box-1">
+                     <span>#</span>
+                     <p>Ai có thể dùng ECO CALM?</p>
+                     <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                  </li>
+                  <div class="text-ques" id="box-1" style="display: none;" data-status="none">
+                     <p>Eco Calm dành cho các đối tượng sau đây:</p>
+                     <ul class="list-ans">
+                        <li>- Người có tiền sử bệnh chàm, viêm da, vảy nến tiếp xúc</li>
+                        <li>- Người đã dùng qua nhiều loại thuốc nhưng không khỏi</li>
+                        <li>- Người có biểu hiện ngứa ngáy, bong tróc da</li>
+                     </ul>
+                  </div>
+                  <li data-ques="box-2">
+                     <span>#</span>
+                     <p>Cách dùng ECO CALM như thế nào?</p>
+                     <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                  </li>
+                  <div class="text-ques" id="box-2" style="display: none;" data-status="none">
+                     <ul class="list-ans">
+                        <li>- Bước 1: Làm sạch vùng da bị vảy nến, chàm... bằng nước sạch hoặc nước muối sinh lý, sau đó
+                           lau khô.
+                        </li>
+                        <li>- Bước 2: Thoa một lượng kem vừa đủ lên trên vùng da cần điều trị</li>
+                        <li>- Bước 3: Massage nhẹ nhàng trong 5 -10 phút để dưỡng chất thấm sâu qua da, mang lại hiệu quả
+                           tối ưu.
+                        </li>
+                     </ul>
+                     <p>Dùng 2 lần mỗi ngày, vào buổi sáng và tối, hoặc khi cần thiết. Dùng đều đặn và liên tục trong 21
+                        ngày để chia tay vẩy nến, chàm, viêm da vĩnh viễn
+                     </p>
+                  </div>
+                  <li data-ques="box-3">
+                     <span>#</span>
+                     <p>Lưu ý gì khi dùng ECO CALM</p>
+                     <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                  </li>
+                  <div class="text-ques" id="box-3" data-status="block">
+                     <ul class="list-ans">
+                        <li>- Nên sử dụng đều đặn kết hợp với chế độ sinh hoạt và môi trường sinh hoạt tốt để mang lại kết
+                           quả khả quan.
+                        </li>
+                        <li>- Nếu sử dụng sản phẩm điều trị theo dạng kê toa của bác sĩ thì hỏi kỹ trước khi sử dụng sản
+                           phẩm này.
+                        </li>
+                        <li>- Bảo quản nơi thoáng mát. Tránh xa tầm tay trẻ em.</li>
+                     </ul>
+                  </div>
+                  <li data-ques="box-4">
+                     <span>#</span>
+                     <p>ECO CALM có gây tác dụng phụ khi sử dụng?</p>
+                     <div class="icon-list-ques"><i class="fas fa-angle-right"></i></div>
+                  </li>
+                  <div class="text-ques" id="box-4" style="display: none;" data-status="none">
+                     <p>Sản phẩm có thành phần từ thiên nhiên, không tác dụng phụ, không gây kích ứng và đã được kiểm
+                        nghiệm, chứng nhận an toàn y tế trước khi đưa ra thị trường
+                     </p>
+                  </div>
+               </ul>
+            </div>
+            <div class="col-md-3 col-12 d-flex align-items-center">
+               <figure class="img-chungnhan">
+                  <img src="img/giay-chung-nhan.png" alt="giay-chung-nhan-fito-clear" class="img-fluid"
+                     title="Giấy chứng nhận">
+               </figure>
+            </div>
+         </div>
+      </section>
+      <section class="price-product">
+         <div class="frames">
+            <h3><span class="rounded-circle d-none d-md-block"></span>Giá Bán ECO CALM?</h3>
+         </div>
+      </section>
+      <section class="form-order">
+         <div class="container-fluid frame-form">
+            <div class="row">
+               <div class="col-md-4 col-12">
+                  <div class="product">
+                     <img src="img/product.png" alt="Eco Calm" title="Eco Calm">
+                  </div>
+               </div>
+               <div class="col-md-6 col-12">
+                  <div class="title-price">GIẢM GIÁ 50%</div>
+                  <div class="box-price">
+                     <div class="left-price">
+                        <del><span>1.580.000 VNĐ</span></del>
+                        <span>Giá chỉ còn</span>
+                     </div>
+                     <div class="right-price">
+                        <span>790.000 VNĐ</span>
+                     </div>
+                  </div>
+                  <form class="formorder" action="" method="post">
+                     <input type="text" id="name" name="name" autocomplete="off" required placeholder="*Tên của bạn">
+                     <input type="text" id="phone" name="phone" autocomplete="off" required placeholder="*Số điện thoại"
+                        maxlength="10" onkeypress="validate(event)">
+                     <center>
+                        <button type="submit" class="js_submit-2" id="formorder">ĐẶT HÀNG</button>
+                     </center>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-12">
+                  <div class="footer-about">
+                     <a href="">
+                     <img src="img/logo-footer.png" alt="Fito Clear" title="Fito Clear">
+                     </a>
+                     <div class="text-about">
+                        Phân phối độc quyền bởi<br>Công ty TNHH Soji Labs
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-12">
+                  <div class="footer-contact">
+                     <div class="title-footer-contact">
+                        Liên hệ
+                     </div>
+                     <div class="detail-footer-contact">
+                        <ul>
+                           <li>
+                              <i class="fas fa-phone-alt"><a href="tel:02873070789">02873070789</a></i>
+                           </li>
+                           <li>
+                              <i class="fas fa-envelope"><a href="mailto:ecom@soji.asia">ecom@soji.asia</a></i>
+                           </li>
+                           <li>
+                              <i class="fab fa-chrome"><a href="#">https://fitoclear.com/</a></i>
+                           </li>
+                           <li>
+                              <i class="fas fa-map-marker-alt"><a href="#" class="disabled">199 Điện Biên Phủ,
+                              P.15, Q.Bình
+                              Thạnh</a></i>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-12">
+                  <div class="connect-me">
+                     <div class="title-footer-connect">Kết nối với chúng tôi</div>
+                     <ul>
+                        <li>
+                           <a href="#" target="_blank" title="Facebook"><img src="svg/icon_facebook.svg"></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank" title="Twitter"><img src="svg/icon_twitter.svg"></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank" title="Pinterest"><img src="svg/icon_pinterest.svg"></a>
+                        </li>
+                        <li>
+                           <a href="#" target="_blank" title="Youtube"><img src="svg/icon_youtube.svg"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/main.js"></script>
+      <script>AOS.init();</script>
+   </body>
+</html>
